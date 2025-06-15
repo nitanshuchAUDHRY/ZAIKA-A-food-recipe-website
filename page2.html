@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+        <a href="#" ><img src="logonew-removebg-preview.png" class="logo"></a>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">HOME</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textBox">
+            <h2>Fresh <span>ROOHAFZA</span></h2>
+            <li>take a bottle of Rooh Afza syrup.</li>
+                
+<li>Place 225ml (7.6oz) of water or milk in a 350ml (12oz) glass.</li>
+<li>Add 2 tbsp (40ml) of Rooh Afza syrup to water or milk (more or less according to taste).</li>
+<li>Stir until the syrup is completely dissolved.</li>
+<li>Add 1 or 2 teaspoons of sugar, if desired, to taste.</li>
+<li>Add two or three mint leaves and ice cubes. You can also add some chopped pistachio nuts or slivered almonds to your drink.</li>
+<br>
+               
+            <a href="#">Learn more</a>
+          
+        </div>
+        <div class="img">
+            <img src="orange.jpg" class="star">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img src="green.jpg" onclick="imgSlider('green.jpg');changeCircleColor('#017143')"></li>
+        <li><img src="yello.jpg" onclick="imgSlider('yello.jpg');changeCircleColor('yellow')"></li>
+        <li><img src="red.jpg" onclick="imgSlider('red.jpg');changeCircleColor('orange')"></li>
+
+    </ul>
+   
+    
+   
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.star').src=anything;
+        }
+
+        function changeCircleColor(color){
+            const circle =document.querySelector('.circle');
+            circle.style.background = color;
+    }
+    </script>
+</body>
+</html>
